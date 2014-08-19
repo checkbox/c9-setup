@@ -140,16 +140,22 @@ setup_bzr() {
 }
 
 setup_checkbox() {
-    if [ -d $HOME/workspace ]; then
-        echo "Setting up ~/workspace/.git for checkbox"
-        ( cd /tmp && git lp init checkbox )
-        mv /tmp/checkbox/.git $HOME/workspace/
-        rm -rf /tmp/checkbox
-        echo "Getting all the bits (this takes time)"
-        ( cd $HOME/workspace && git lp fetch )
-        echo "Switching your repository to trunk aka launchpad/+upstream"
-        ( cd $HOME/workspace && git checkout launchpad/+upstream )
+    if [ ! -d $HOME/workspace ]; then
+        echo "Where is your c9 workspace directory?"
+        return
     fi
+    if [ -e $HOME/workspace/.git ]; then
+        echo "Remove the .git directory from your workspace"
+        return
+    fi
+    echo "Setting up ~/workspace/.git for checkbox"
+    ( cd /tmp && git lp init checkbox )
+    mv /tmp/checkbox/.git $HOME/workspace/
+    rm -rf /tmp/checkbox
+    echo "Getting all the bits (this takes time)"
+    ( cd $HOME/workspace && git lp fetch )
+    echo "Switching your repository to trunk aka launchpad/+upstream"
+    ( cd $HOME/workspace && git checkout launchpad/+upstream )
 }
 
 deploy_gitlp
