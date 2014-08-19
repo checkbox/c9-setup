@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>C9-setup by checkbox</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/checkbox/c9-setup">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>C9-setup</h1>
+            <h2>Your one-click Checkbox c9.io workspace </h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/checkbox/c9-setup/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/checkbox/c9-setup/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="c9io-setup-script-for-checkbox" class="anchor" href="#c9io-setup-script-for-checkbox"><span class="octicon octicon-link"></span></a>c9.io setup script for checkbox</h1>
+
+<p>With this script, anyone can get a working checkbox development environment for
+free, in minutes, on any OS. All you have to do is:</p>
+
+<h1>
+<a name="get-a-c9io-account" class="anchor" href="#get-a-c9io-account"><span class="octicon octicon-link"></span></a>Get a c9.io account</h1>
+
+<p>Go to <a href="https://c9.io">https://c9.io</a> and sign in with your github or bitbucket accounts.</p>
+
+<h1>
+<a name="get-a-launchpadnet-account" class="anchor" href="#get-a-launchpadnet-account"><span class="octicon octicon-link"></span></a>Get a launchpad.net account</h1>
+
+<p>You'll need a launchpad to push your checkbox banches back to launchped.
+Go to <a href="https://login.launchpad.net/+login">https://login.launchpad.net/+login</a> to create an account if needed.</p>
+
+<p>If you've never used c9.io with launchpad before, make sure to add your c9.io
+ssh key to your launchpad account. Unfortunately there are no simple links for
+that (ah, all those shiny 2.0 webapps). On c9.io go to your dashboard and click
+on "Show your SSH key" on the right. Copy that key. On launchpad.net click on
+your username in the top-right corner, click on the yellow circle/pencil icon
+next to the "SSH keys" section. Paste in your key and save, you should be good
+to go. </p>
+
+<h1>
+<a name="create-a-new-workspace" class="anchor" href="#create-a-new-workspace"><span class="octicon octicon-link"></span></a>Create a new workspace</h1>
+
+<p>Go to your c9.io dashboard and create a new workspace, any name will do but you
+can use <code>checkbox</code> to know what it is for later on. Make sure to select the
+<em>custom</em> workspace type then click on "create"</p>
+
+<p>After the workspace is created click on the "start editing" button. This will
+open a new tab/window specific for that workspace. In the new tab look at the
+default window layout. You should have a terminal running at the bottom of the
+page. You can open additional terminals with <code>alt+t</code>.</p>
+
+<p>Paste the following code:</p>
+
+<pre><code>curl -s https://raw.githubusercontent.com/checkbox/c9-setup/master/c9-setup.sh | sh
+</code></pre>
+
+<p>Volia :-) You should be good to go now.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/checkbox">checkbox</a> can be found on <a href="https://github.com/checkbox/c9-setup">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
