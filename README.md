@@ -37,6 +37,6 @@ page. You can open additional terminals with `alt+t`.
 
 Paste the following code:
 ```
-curl https://raw.githubusercontent.com/checkbox/c9-setup/master/c9-setup.sh | sh
+curl -s https://raw.githubusercontent.com/checkbox/c8-setup/master/c9-setup.sh | sh
 ```
 Volia :-) You should be good to go now.
