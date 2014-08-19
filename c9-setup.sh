@@ -135,7 +135,7 @@ setup_bzr() {
     else
         echo "What is your launchpad.net username?"
         read LP_USERNAME
-        bzr --quiet lp-login $LP_USERNAME
+        bzr lp-login $LP_USERNAME
     fi
 }
 
