@@ -153,6 +153,6 @@ setup_checkbox() {
 }
 
 deploy_gitlp
-setup_bzr
+# setup_bzr
 setup_checkbox
 
