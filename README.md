@@ -27,16 +27,16 @@ Create a new workspace
 ======================
 
 Go to your c9.io dashboard and create a new workspace, any name will do but you
-can use 'checkbox' to know what it is for later on. Make sure to select the
-'custom' workspace type then click on "create"
+can use `checkbox` to know what it is for later on. Make sure to select the
+*custom* workspace type then click on "create"
 
 After the workspace is created click on the "start editing" button. This will
 open a new tab/window specific for that workspace. In the new tab look at the
 default window layout. You should have a terminal running at the bottom of the
-page. You can open additional terminals with ALT+T.
+page. You can open additional terminals with `alt+t`.
 
 Paste the following code:
-
- curl https://raw.githubusercontent.com/checkbox/c9-setup/master/c9-setup.sh | sh
-
+```
+curl https://raw.githubusercontent.com/checkbox/c9-setup/master/c9-setup.sh | sh
+```
 Volia :-) You should be good to go now.
