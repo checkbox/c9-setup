@@ -70,7 +70,7 @@ gitlp_get_deps() {
     local wanted_pkgs="git bzr bzr-fastimport git-flow patch"
     local pkgs_to_install=""
     local pkg=""
-    for pkg in "$wanted_pkgs"; do
+    for pkg in $wanted_pkgs; do
         if ! _is_installed $pkg; then
             echo "Installing package $pkg"
             pkgs_to_install="$pkgs_to_install $pkg"
