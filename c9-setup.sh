@@ -148,6 +148,10 @@ setup_checkbox() {
         echo "Remove the .git directory from your workspace"
         return
     fi
+    if [ -e $HOME/workspace/README.md ]; then
+        echo "Remove the README.md file from your workspace"
+        return
+    fi
     echo "Setting up ~/workspace/.git for checkbox"
     ( cd /tmp && git lp init checkbox )
     mv /tmp/checkbox/.git $HOME/workspace/
